@@ -1,179 +1,77 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Etec
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
 
-  <ion-row>
-    <ion-col size="12">
-      <ion-segment value="default" (ionChange)="selecionarCards($event)">
-
-        <ion-segment-button value="brasil">
-          <ion-label>Brasil</ion-label>
-        </ion-segment-button>
-
-        <ion-segment-button value="china">
-          <ion-label>China</ion-label>
-        </ion-segment-button>
-
-        <ion-segment-button value="india">
-          <ion-label>Índia</ion-label>
-        </ion-segment-button>
-
-        <ion-segment-button value="mexico">
-          <ion-label>México</ion-label>
-        </ion-segment-button>
-
-        <ion-segment-button value="jordania">
-          <ion-label>Jordânia</ion-label>
-        </ion-segment-button>
-
-        <ion-segment-button value="italia">
-          <ion-label>Itália</ion-label>
-        </ion-segment-button>
-
-        <ion-segment-button value="peru">
-          <ion-label>Peru</ion-label>
-        </ion-segment-button>
-
-      </ion-segment>
+  <ion-row class="ion-justify-content-center">
+    <ion-col size-6>
+      <img src="https://images.pexels.com/photos/9454915/pexels-photo-9454915.jpeg">
     </ion-col>
+
+    <ion-col size-6 class="ion-text-center">
+      <br> <br> <br> <br> <br> <br>
+      <ion-row class="ion-justify-content-center">
+        <h1>
+          Criar Conta
+        </h1> <br> <br> <br> <br>
+      </ion-row>
+
+        <ion-row class="ion-justify-content-center">
+          
+          <ion-col size="6" class="ion-text-center">
+            <ion-item>
+              <ion-input>
+                Nome
+              </ion-input> <br> <br> <br> 
+            </ion-item>
+      
+            <ion-item>
+              <ion-input>
+                E-mail
+              </ion-input> <br> <br> <br>
+            </ion-item>
+      
+            <ion-item>
+              <ion-input>
+                Senha  *****
+              </ion-input> <br> <br> <br> 
+            </ion-item>
+      
+            <ion-item>
+              <ion-input>
+                Confirmar Senha  *****
+              </ion-input>
+            </ion-item> <br> <br> <br> <br> 
+          </ion-col>
+
+        </ion-row>
+      
+
+      <ion-button shape="round" color="success">Criar conta</ion-button> <br> <br> <br> 
+
+      <ion-row>
+        <ion-col>
+         Login Com
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-button shape="round" color="primary">Facebook</ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-button shape="round" color="secondary">Twitter</ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-button shape="round" color="danger">Google</ion-button>
+        </ion-col>
+      </ion-row>
+
+    </ion-col>
+
   </ion-row>
 
-  <!-- Brasil -->
-  <ion-row *ngIf="this.item_selecionado == 'brasil'">
-    <ion-col size="4">
-     <ion-card>
-      <img src="https://images.pexels.com/photos/3607628/pexels-photo-3607628.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-     </ion-card>
-    </ion-col>
-    <ion-col size="4">
-      <ion-card>
-       <img src="https://images.pexels.com/photos/12546016/pexels-photo-12546016.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-      </ion-card>
-     </ion-col>
-     <ion-col size="4">
-      <ion-card>
-       <img src="https://images.pexels.com/photos/5250521/pexels-photo-5250521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-      </ion-card>
-     </ion-col>
-  </ion-row>
-
-  <!-- China -->
-  <ion-row *ngIf="this.item_selecionado == 'china'">
-    <ion-col size="4">
-     <ion-card>
-      <img src="https://images.pexels.com/photos/13789557/pexels-photo-13789557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-     </ion-card>
-    </ion-col>
-    <ion-col size="4">
-      <ion-card>
-       <img src="https://images.pexels.com/photos/9165079/pexels-photo-9165079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-      </ion-card>
-     </ion-col>
-     <ion-col size="4">
-      <ion-card>
-       <img src="https://images.pexels.com/photos/13560534/pexels-photo-13560534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-      </ion-card>
-     </ion-col>
-  </ion-row>
-
-  <!-- India -->
-  <ion-row *ngIf="this.item_selecionado == 'india'">
-    <ion-col size="4">
-     <ion-card>
-      <img src="https://images.pexels.com/photos/2413613/pexels-photo-2413613.jpeg">
-     </ion-card>
-    </ion-col>
-    <ion-col size="4">
-      <ion-card>
-       <img src="https://images.pexels.com/photos/5458393/pexels-photo-5458393.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-      </ion-card>
-     </ion-col>
-     <ion-col size="4">
-      <ion-card>
-       <img src="https://images.pexels.com/photos/3361480/pexels-photo-3361480.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-      </ion-card>
-     </ion-col>
-  </ion-row>
-
-  <!-- México -->
-  <ion-row *ngIf="this.item_selecionado == 'mexico'">
-    <ion-col size="4">
-     <ion-card>
-      <img src="https://images.pexels.com/photos/13577605/pexels-photo-13577605.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-     </ion-card>
-    </ion-col>
-    <ion-col size="4">
-      <ion-card>
-       <img src="https://images.pexels.com/photos/5862694/pexels-photo-5862694.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-      </ion-card>
-     </ion-col>
-     <ion-col size="4">
-      <ion-card>
-       <img src="https://images.pexels.com/photos/3290068/pexels-photo-3290068.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-      </ion-card>
-     </ion-col>
-  </ion-row>
-
-  <!-- Jodania -->
-  <ion-row *ngIf="this.item_selecionado == 'jordania'">
-    <ion-col size="4">
-     <ion-card>
-      <img src="https://images.pexels.com/photos/720254/pexels-photo-720254.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-     </ion-card>
-    </ion-col>
-    <ion-col size="4">
-      <ion-card>
-       <img src="https://images.pexels.com/photos/2179666/pexels-photo-2179666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-      </ion-card>
-     </ion-col>
-     <ion-col size="4">
-      <ion-card>
-       <img src="https://images.pexels.com/photos/1671632/pexels-photo-1671632.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-      </ion-card>
-     </ion-col>
-  </ion-row>
-
-  <!-- Italia -->
-  <ion-row *ngIf="this.item_selecionado == 'italia'">
-    <ion-col size="4">
-     <ion-card>
-      <img src="https://images.pexels.com/photos/1701595/pexels-photo-1701595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-     </ion-card>
-    </ion-col>
-    <ion-col size="4">
-      <ion-card>
-       <img src="https://images.pexels.com/photos/1809616/pexels-photo-1809616.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-      </ion-card>
-     </ion-col>
-     <ion-col size="4">
-      <ion-card>
-       <img src="https://images.pexels.com/photos/2760519/pexels-photo-2760519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-      </ion-card>
-     </ion-col>
-  </ion-row>
-
-  <!-- Peru -->
-  <ion-row *ngIf="this.item_selecionado == 'peru'">
-    <ion-col size="4">
-     <ion-card>
-      <img src="https://images.pexels.com/photos/90597/pexels-photo-90597.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-     </ion-card>
-    </ion-col>
-    <ion-col size="4">
-      <ion-card>
-       <img src="https://images.pexels.com/photos/3585435/pexels-photo-3585435.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-      </ion-card>
-     </ion-col>
-     <ion-col size="4">
-      <ion-card>
-       <img src="https://images.pexels.com/photos/3879058/pexels-photo-3879058.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-      </ion-card>
-     </ion-col>
-  </ion-row>
 </ion-content>
