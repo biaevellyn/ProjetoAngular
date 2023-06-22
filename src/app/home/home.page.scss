@@ -1,27 +1,22 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.imagem{
+  background-image: url(https://i.pinimg.com/564x/46/e0/a4/46e0a47766f9954ad578d76dc40eb05a.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-content {
+  --background: rgb(242, 56, 158);
+  --background: linear-gradient(90deg, rgba(#FFFF0A) 14%, rgba(#F50C00) 51%,  rgba(#75F528) 89%);
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+img {
+  border-radius: 16px;
 
-  color: #8c8c8c;
-
-  margin: 0;
 }
 
-#container a {
-  text-decoration: none;
+.divisor {
+  height: 50vh;
+  overflow: hidden;
+  align-items: center;
 }
